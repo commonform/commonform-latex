@@ -9,8 +9,6 @@
     "escape-latex": "~0.1.2"
   },
   "devDependencies": {
-    "jscs": "~1.13.1",
-    "jshint": "~2.8.0",
     "jsmd-tape": "^0.1.0",
     "tape": "^4.0.1"
   },
@@ -25,7 +23,6 @@
   "repository": "commonform/commonform-latex",
   "scripts": {
     "test": "jsmd-tape README.md | sed 's!commonform-latex!./!' | node",
-    "lint": "jshint source && jscs source",
     "precommit": "npm run lint"
   }
 }
