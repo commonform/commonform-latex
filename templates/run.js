@@ -26,7 +26,14 @@ module.exports = function run(element, numberStyle, conspicuous) {
         blankLine +
         ' (reference to ``' + preprocess(heading) + '\'\')' ) }
     else {
-      return preprocess('Section ' + numberStyle(numbering) + ' (' +
-        heading + ')') } }
+      if (conspicuous) {
+        return (
+          '\\textbf{\\textit{' +
+          preprocess('Section ' + numberStyle(numbering) + ' (' +
+            heading + ')') +
+          '}}' ) }
+      else {
+        return preprocess('Section ' + numberStyle(numbering) + ' (' +
+          heading + ')') } } }
   else {
     throw new Error('Invalid type: ' + JSON.stringify(element)) } }
