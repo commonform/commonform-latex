@@ -1,6 +1,6 @@
 {
   "name": "commonform-latex",
-  "description": "render Common Forms in latex",
+  "description": "render Common Forms in LaTeX",
   "version": "0.2.1",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (http://kemitchell.com)",
   "dependencies": {
@@ -14,14 +14,13 @@
   },
   "homepage": "https://commonform.github.io",
   "keywords": [
-    "latex",
+    "LaTeX",
     "contracts",
     "law"
   ],
   "license": "Apache-2.0",
   "repository": "commonform/commonform-latex",
   "scripts": {
-    "test": "defence README.md | replace-require-self | node",
-    "precommit": "npm run lint"
+    "test": "defence README.md | replace-require-self | node"
   }
 }
