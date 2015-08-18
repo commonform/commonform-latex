@@ -10,12 +10,12 @@ var blankLine = '{\\leavevmode \\vbox{\\hrule width5\\parindent}}';
 module.exports = function run(element, numberStyle, conspicuous) {
   if (typeof element === 'string') {
     if (conspicuous) {
-      return '{\\bi ' + preprocess(element) + '}';
+      return '\\textbf{\\textit{' + preprocess(element) + '}}';
     } else {
       return preprocess(element);
     }
   } else if (element.hasOwnProperty('definition')) {
-    return '{``\\it ' + element.definition + '\'\'}';
+    return '\\textit{``' + element.definition + '\'\'}';
   } else if (element.hasOwnProperty('blank')) {
     return blankLine + ' (' + preprocess(element.blank) + ')';
   } else if (element.hasOwnProperty('heading')) {

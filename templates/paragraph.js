@@ -18,7 +18,7 @@ module.exports = function(paragraph, numberStyle) {
     ) +
     (
       paragraph.hasOwnProperty('heading') ?
-        '{\\bf ' + escape(paragraph.heading) + '}. %\n' :
+        '\\textbf{' + escape(paragraph.heading) + '}. %\n' :
         ''
     ) +
     paragraph.content.map(function(element) {
