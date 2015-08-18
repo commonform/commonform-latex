@@ -15,13 +15,13 @@ var form = {
 
 var output = [
   '\\noindent%',
-  '\\hskip 1\\parindent%',
+  '\\hspace{1\\parindent}%',
   '1. %',
   '\\textbf{IP}. %',
   'An IP clause',
   '',
   '\\noindent%',
-  '\\hskip 1\\parindent%',
+  '\\hspace{1\\parindent}%',
   '2. %',
   '\\textbf{Survival}. %',
   'Section 1 (IP)' ]

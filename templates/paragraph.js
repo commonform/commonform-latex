@@ -9,7 +9,7 @@ module.exports = function(paragraph, numberStyle) {
   var conspicuous = paragraph.hasOwnProperty('conspicuous')
   return (
     '\\noindent%\n' +
-    '\\hskip ' + (paragraph.depth - 1) + '\\parindent%\n' +
+    '\\hspace{' + (paragraph.depth - 1) + '\\parindent}%\n' +
     ( number ?
         escape(numberStyle(number)) + '. %\n' :
         '') +
