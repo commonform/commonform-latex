@@ -19,7 +19,6 @@
     "law"
   ],
   "license": "Apache-2.0",
-  "main": "source/index",
   "repository": "commonform/commonform-latex",
   "scripts": {
     "test": "defence README.md | replace-require-self | node",
