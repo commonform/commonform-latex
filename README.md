@@ -2,6 +2,7 @@ Render Common Forms in LaTeX.
 
 ```javascript
 var latex = require('commonform-latex');
+var assert = require('assert')
 
 var form = {
   content: [
@@ -26,5 +27,5 @@ var output = [
   'Section 1 (IP)'
 ].join('\n');
 
-latex(form, {}); // => output
+assert.deepEqual(latex(form, {}), output);
 ```

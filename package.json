@@ -9,8 +9,8 @@
     "escape-latex": "~0.1.2"
   },
   "devDependencies": {
-    "jsmd-tape": "^0.1.0",
-    "tape": "^4.0.1"
+    "defence-cli": "~1.0.1",
+    "replace-require-self": "~1.0.0"
   },
   "homepage": "https://commonform.github.io",
   "keywords": [
@@ -22,7 +22,7 @@
   "main": "source/index",
   "repository": "commonform/commonform-latex",
   "scripts": {
-    "test": "jsmd-tape README.md | sed 's!commonform-latex!./!' | node",
+    "test": "defence README.md | replace-require-self | node",
     "precommit": "npm run lint"
   }
 }
