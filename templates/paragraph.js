@@ -11,7 +11,7 @@ module.exports = function(paragraph, numberStyle) {
     '\\noindent%\n' +
     '\\hspace{' + (paragraph.depth - 1) + '\\parindent}%\n' +
     ( number ?
-        escape(numberStyle(number)) + '. %\n' :
+        escape(numberStyle(number)) + '.\ %\n' :
         '') +
     ( paragraph.hasOwnProperty('heading') ?
         '\\textbf{' + escape(paragraph.heading) + '}. %\n' :
