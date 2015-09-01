@@ -16,13 +16,13 @@ var form = {
 var output = [
   '\\noindent%',
   '\\hspace{1\\parindent}%',
-  '1. %',
+  '1.\\ %',
   '\\textbf{IP}. %',
   'An IP clause',
   '',
   '\\noindent%',
   '\\hspace{1\\parindent}%',
-  '2. %',
+  '2.\\ %',
   '\\textbf{Survival}. %',
   'Section 1 (IP)' ]
 .join('\n')
