@@ -12,6 +12,8 @@ module.exports = function run(element, numberStyle, conspicuous) {
       return '\\textbf{\\textit{' + preprocess(element) + '}}' }
     else {
       return preprocess(element) } }
+  else if (element.hasOwnProperty('use')) {
+    return preprocess(element.use) }
   else if (element.hasOwnProperty('definition')) {
     return '\\textit{``' + element.definition + '\'\'}' }
   else if (element.hasOwnProperty('blank')) {
